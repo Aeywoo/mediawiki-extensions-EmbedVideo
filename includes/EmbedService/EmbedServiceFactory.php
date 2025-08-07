@@ -32,6 +32,7 @@ final class EmbedServiceFactory {
 		Ccc::class,
 		DailyMotion::class,
 		ExternalVideo::class,
+		Genius::class,
 		KakaoTV::class,
 		Loom::class,
 		NaverTV::class,
@@ -88,6 +89,9 @@ final class EmbedServiceFactory {
 			case 'external':
 			case 'externalvideo':
 				return new ExternalVideo( $id );
+
+			case 'genius':
+				return new Genius( $id );
 
 			case 'kakaotv':
 			case 'play-tv.kakao':
